@@ -1,4 +1,6 @@
 const readline = require('readline-sync');
+const {calculateWeight} = require ('../lessons/day5/UtilMethods')
+
 const BMI_MIN = 18.5;
 const BMI_MAX = 24.9;
 let height = Number(readline.question('Your height: '));
@@ -26,7 +28,7 @@ function calculateBMI(weight, height) {
     return BMI;
 
 }
-function calculateWeight(BMI_standard, height) {
-    let weight_standard = BMI_standard * (height * height);
-    return weight_standard;
-}
+// function calculateWeight(BMI_standard, height) {
+    // let weight_standard = BMI_standard * (height * height);
+    // return weight_standard;
+// }
